@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Righteous');
+
+*{
+    box-sizing: border-box;
+}
+
+body,
+html{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2vw;
+    animation-name: changebg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+img{
+    border-radius: 500%;
+    width: 300px;
+    height: 300px;
+    border: 8px #0e0e0e solid;
+}
+
+h1{
+    font-family: Righteous, serif;
+    font-size: calc(3em + .5vh + .5vw)
+}
+
+p{
+    font-family: "Concert one", "comic sans", sans-serif;
+    font-size: calc(1.5em + .5vh + .5vw);
+}
+
+p,
+h1{
+    color: #0d0d0d;
+}
+
+p,
+h1,
+#social,
+img{
+    margin: calc(16px + .15vh) 0;
+    text-align: center;
+}
+
+#social{
+    display: flex;
+}
+
+#social > *{
+    margin: 0 calc(8px + 0.3vw);
+    font-size: calc(2em + .4vh + .4vw);
+    cursor: pointer;
+}
+
+a{
+    transition: .2s;
+    color: #0d0d0d;
+}
+
+a:visited{
+    color: #0e0e0e;
+}
+
+a:hover{
+    color: #404040;
+}
+
+.underline{
+    text-decoration-style: dotted;
+}
+
+@keyframes changebg{
+    0%{
+        background-color: bisque
+    }
+    25%{
+        background-color: blanchedalmond;
+    }
+    50%{
+        background-color: beige;
+    }
+    75%{
+        background-color: azure ;
+    }
+    100%{
+        background-color: aliceblue;
+    }
+}
