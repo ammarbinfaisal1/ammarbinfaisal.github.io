@@ -28,6 +28,10 @@ img{
     border-radius: 500%;
     width: 300px;
     height: 300px;
+    @media (max-width: 425px){
+    	width: 50vw;
+    	height: 50vw;
+    }
     border: 8px #0e0e0e solid;
 }
 
