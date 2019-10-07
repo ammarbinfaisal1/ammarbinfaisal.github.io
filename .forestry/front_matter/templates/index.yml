@@ -1,4 +1,12 @@
 ---
 label: Index
 hide_body: true
-fields: []
+fields:
+- name: issue_name
+  type: blocks
+  template_types: []
+  config:
+    min: 
+    max: 
+  label: issue name
+  description: Month of issue of the journal
